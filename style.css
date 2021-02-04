@@ -1,0 +1,114 @@
+*{
+    padding:0; margin:0;
+    box-sizing: border-box;
+  }
+
+  h4{
+      font-size: 1.6rem;
+  }
+
+  h6{
+      font-size: 1.2rem;
+  }
+  .container{
+    min-height: 100vh;
+    width: 100%;
+    color: white;
+    display: grid;
+    /*Break from 4x1 to 2x2 when we reach tablet sizes*/
+    grid-template-columns: repeat(auto-fill, minmax(768px, 1fr));
+    grid-auto-rows: minmax(180px, auto);
+  }
+
+  .container1{
+      background: red;
+      min-height: 100vh;
+      padding: 100px;
+      display: grid;
+      /*Originally we got 2x1 big containers, each container is split 2x1*/
+      grid-template-columns: repeat(auto-fill, minmax(50%, 1fr));
+      grid-auto-rows: minmax(400px, auto);
+
+      background: rgba(38,38,45,1);
+      color: white;
+  }
+
+  .container2{
+      min-height: 100vh;
+      display: grid;
+      /*Originally we got 2x1 big containers, each container is split 2x1*/
+      grid-template-columns: repeat(auto-fill, minmax(50%, 1fr));
+      grid-auto-rows: minmax(400px, auto);
+  }
+
+  .box1{
+    background: rgba(38,38,45,1);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+
+  }
+
+  .box1 h1{
+      font-size: 100px;
+      position: relative;
+  }
+
+  .box1 h4{
+    padding: 0 0 50px 0;
+  }
+
+  .box1 button{
+    background-color: rgba(38, 38, 45, 0.8);
+    box-shadow: 0px 4px 2px rgba(0,0,0,0.25);
+    border-radius: 5px;
+    border: 1px solid white;
+    color: white;
+    padding: 10px 20px;
+  }
+
+  .box2{
+      background: url("/img/banner-1.jpg");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      align-items: flex-start;
+      padding: 0 0 0 10px;
+  }
+
+  .box2 h6{
+    padding: 10px 0 0 0;
+  }
+
+
+  .box3{
+    background: url("/img/banner-2.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+
+    padding: 0 0 100px 10px;
+  }
+  
+  .box4{
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.3)), url("/img/banner-3.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+
+    padding: 0 0 100px 10px;
+  }
